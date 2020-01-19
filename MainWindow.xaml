@@ -1,0 +1,49 @@
+﻿<Window x:Class="_8BitBinary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_8BitBinary"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen" Activated="Window_Activated">
+    <Grid Width="518">
+        <Label x:Name="lblNum" Content="---" Margin="236,108,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary1" Content="" HorizontalAlignment="Left" Margin="434,195,0,0" VerticalAlignment="Top" UseLayoutRounding="True" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="0" Click="chkbxBinary1_Click"/>
+        <Label x:Name="lbl1" Content="1" HorizontalAlignment="Left" Margin="422,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lblMode" Content="Decimal" Margin="172,80,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" HorizontalAlignment="Left" Width="174" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary2" Content="" HorizontalAlignment="Left" Margin="388,195,0,0" VerticalAlignment="Top" UseLayoutRounding="True" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="1" Click="chkbxBinary2_Click"/>
+        <Label x:Name="lbl2" Content="2" HorizontalAlignment="Left" Margin="376,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary4" Content="" HorizontalAlignment="Left" Margin="342,195,0,0" VerticalAlignment="Top" UseLayoutRounding="True" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="2" Click="chkbxBinary4_Click"/>
+        <Label x:Name="lbl4" Content="4" HorizontalAlignment="Left" Margin="330,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary8" Content="" HorizontalAlignment="Left" Margin="296,195,0,0" VerticalAlignment="Top" UseLayoutRounding="True" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="3" Click="chkbxBinary8_Click"/>
+        <Label x:Name="lbl8" Content="8" HorizontalAlignment="Left" Margin="284,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary16" Content="" HorizontalAlignment="Left" Margin="250,195,0,0" VerticalAlignment="Top" UseLayoutRounding="True" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="4" Click="chkbxBinary16_Click"/>
+        <Label x:Name="lbl16" Content="16" HorizontalAlignment="Left" Margin="238,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary32" Content="" HorizontalAlignment="Left" Margin="204,195,0,0" VerticalAlignment="Top" UseLayoutRounding="True" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="5" Click="chkbxBinary32_Click"/>
+        <Label x:Name="lbl32" Content="32" HorizontalAlignment="Left" Margin="192,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary64" Content="" HorizontalAlignment="Left" Margin="158,195,0,0" VerticalAlignment="Top" UseLayoutRounding="True" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="6" Click="chkbxBinary64_Click"/>
+        <Label x:Name="lbl64" Content="64" HorizontalAlignment="Left" Margin="146,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chkbxBinary128" Content="" HorizontalAlignment="Left" Margin="112,195,0,0" VerticalAlignment="Top" UseLayoutRounding="False" Width="16" VerticalContentAlignment="Center" IsEnabled="False" Tag="7" Click="chkbxBinary128_Click"/>
+        <Label x:Name="lbl128" Content="128" HorizontalAlignment="Left" Margin="100,215,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lblValues" Content="Values" HorizontalAlignment="Left" Margin="24,218,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="10" Width="71" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl1Val" Content="0" HorizontalAlignment="Left" Margin="422,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl2Val" Content="0" HorizontalAlignment="Left" Margin="376,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl4Val" Content="0" HorizontalAlignment="Left" Margin="330,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl8Val" Content="0" HorizontalAlignment="Left" Margin="284,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl16Val" Content="0" HorizontalAlignment="Left" Margin="238,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl32Val" Content="0" HorizontalAlignment="Left" Margin="192,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl64Val" Content="0" HorizontalAlignment="Left" Margin="146,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl128Val" Content="0" HorizontalAlignment="Left" Margin="100,162,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="16" Width="40" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lblResult" Content="Binary" HorizontalAlignment="Left" Margin="24,165,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="10" Width="71" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btnGameStart" Content="Start" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="btnGameStart_Click"/>
+        <Label x:Name="lblTallyTest" Content="000" Margin="236,243,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="20" HorizontalAlignment="Left" Opacity="0"/>
+        <Label x:Name="lblScore" Content="000" Margin="462,10,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="20" HorizontalAlignment="Left" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblOfScore" Content="Score" HorizontalAlignment="Left" Margin="422,10,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="10" Width="40" HorizontalContentAlignment="Center" Height="33" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblTimer" Content="---" Margin="462,48,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="20" HorizontalAlignment="Left" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblOfTimer" Content="Timer" HorizontalAlignment="Left" Margin="422,48,0,0" VerticalAlignment="Top" FontFamily="Courier New" FontSize="10" Width="40" HorizontalContentAlignment="Center" Height="33" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnTestStart" Content="Start Test" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" Width="75" Click="btnTestStart_Click"/>
+        <RadioButton x:Name="rbDec" Content="Decimal" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Checked="rbDec_Checked"/>
+        <RadioButton x:Name="rbHex" Content="Hexadecimal" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Checked="rbHex_Checked"/>
+        <Button x:Name="btnChkHS" Content="Check High Score" HorizontalAlignment="Left" Margin="192,10,0,0" VerticalAlignment="Top" Width="120" Click="BtnChkHS_Click"/>
+    </Grid>
+</Window>
